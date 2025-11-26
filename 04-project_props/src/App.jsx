@@ -1,7 +1,6 @@
 import Card from "./components/Card";
 
 const App = () => {
-  // array of objects
   const jobOpenings = [
     {
       brandLogo: "https://pngimg.com/uploads/meta/meta_PNG12.png",
@@ -116,10 +115,10 @@ const App = () => {
 
   return (
     <div className="parent">
-      {jobOpenings.map(function (elem, idx) {// loop by map or iske andr pss h elem mtlb obj and idx
+      {jobOpenings.map(function (elem, idx) {
         return (
           <div key={idx}>
-            <Card      // card component and its functions argument which is called 
+            <Card
               company={elem.companyName}
               datePosted={elem.datePosted}
               post={elem.post}

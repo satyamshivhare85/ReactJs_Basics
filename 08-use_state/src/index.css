@@ -1,0 +1,68 @@
+/* Global Styles */
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(135deg, #4e5ff8, #7b8cff);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Counter Box */
+.container {
+  background: #ffffff;
+  width: 350px;
+  padding: 30px;
+  border-radius: 16px;
+  text-align: center;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  animation: fadeIn 0.4s ease-in-out;
+}
+
+h2 {
+  font-size: 28px;
+  margin-bottom: 25px;
+  color: #333;
+}
+
+/* Buttons */
+.btn {
+  padding: 12px 20px;
+  margin: 10px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  border: none;
+  background: #4e5ff8;
+  color: #fff;
+  border-radius: 10px;
+  transition: 0.3s ease;
+  min-width: 120px;
+}
+
+.btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(78, 95, 248, 0.4);
+}
+
+/* Reset Button */
+.reset {
+  background: #ff3b30;
+}
+
+.reset:hover {
+  box-shadow: 0 8px 20px rgba(255, 59, 48, 0.4);
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
